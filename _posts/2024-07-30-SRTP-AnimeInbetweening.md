@@ -1,24 +1,26 @@
 ---
-layout: photo
-title: Gallery Post
+layout: post 
+title: SRTP-anime-inbetweening
 date: 2024-07-30 15:45:20
-category: Photo
-photos:
-- http://ww1.sinaimg.cn/mw690/81b78497jw1emfgwkasznj21hc0u0qb7.jpg
-- http://ww3.sinaimg.cn/mw690/81b78497jw1emfgwjrh2pj21hc0u01g3.jpg
-- http://ww2.sinaimg.cn/mw690/81b78497jw1emfgwil5xkj21hc0u0tpm.jpg
-- http://ww3.sinaimg.cn/mw690/81b78497jw1emfgvcdn25j21hc0u0qpa.jpg
+category: project
 tags:
-- consectetur
-description: Gallery Post Test. 测试图片类文章的显示。
+- inbetweening
+description: Record for author's SRTP project.
 
 
 ---
 
-Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictum faucibus urna at convallis. Aliquam in lectus at urna rutrum porta. In lacus arcu, molestie ut vestibulum ut, rhoncus sed eros. Sed et elit vitae risus pretium consectetur vel in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus turpis quis lectus rhoncus adipiscing. Proin pulvinar placerat suscipit. Maecenas imperdiet, quam vitae varius auctor, enim mauris vulputate sapien, nec laoreet neque diam non quam.
 
-<!-- more -->
+[\[paper\]](/assets/pdf/paper.pdf)
+[\[presentation ppt\]](/assets/pdf/基于机器学习的动漫中割-结题答辩.pptx)
+[\[code(not furnished yet)\]](https://github.com/ManiacWallnut/AnimeInbetweening)
 
-![Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)](http://ww1.sinaimg.cn/large/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg)
+### Abstract
 
-Etiam luctus mauris at mi sollicitudin quis malesuada nibh porttitor. Vestibulum non dapibus magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin feugiat hendrerit viverra. Phasellus sit amet nunc mauris, eu ultricies tellus. Sed a mi tortor, eleifend varius erat. Proin consectetur molestie tortor eu gravida. Cras placerat orci id arcu tristique ut rutrum justo pulvinar. Maecenas lacinia fringilla diam non bibendum. Aenean vel viverra turpis. Integer ut leo nisi. Pellentesque vehicula quam ut sapien convallis consequat. Aliquam ut arcu purus, eget tempor purus. Integer eu tellus quis erat tristique gravida eu vel lorem. 
+In simple terms, animation inbetweening is a kind of video interpolation for low-frame-rate 2D animation. Although there are many mature vdeo interpolation algorithms, they are all designed for videos with higher frame rate than 24fps, so they are not quite suitable for animation inbetweening works with large motion spans and frame rates usually lower than 12fps. In addition, these interpolation algorithms do not do a good job of preserving the outlines of the objects in the video, which is also required in actual animation inbetweening work. In this work, we propose a different interpolation method. Specifically, we use B-spline curves to fit the outlines of 2 input frames, and find the curves that have moved between the frames and then match them. After that, we predict the positions of the moving curves in the middle frame, and thus we obtain the middle frame composed of the unmoved curves and the predicted curves. Our algorithm can preserve the outlines of the middle frame during interpolation, and any number of mid-frames is supported.
+
+<img src="/assets/fancybox/test.gif" alt="Test GIF" width="500" height="400">
+
+
+
+
