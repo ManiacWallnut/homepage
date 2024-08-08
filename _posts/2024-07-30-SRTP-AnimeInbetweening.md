@@ -11,7 +11,7 @@ description: Record for author's SRTP project.
 ---
 
 
-[\[paper\]](/assets/pdf/paper.pdf)
+[\[paper\]](/homepage/assets/pdf/paper.pdf)
 [\[presentation ppt\]](/assets/pdf/基于机器学习的动漫中割-结题答辩.pptx)
 [\[code(not furnished yet)\]](https://github.com/ManiacWallnut/AnimeInbetweening)
 
